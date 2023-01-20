@@ -1,0 +1,322 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root {
+    --main-color: #5757d1;
+    --color-dark: #1d2231;
+    --text-grey: #8390a2;
+}
+
+* {
+    /* background-color: #E9E3D7; */
+    padding: 0;
+    margin: 0;
+    box-sizing: boder-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 230px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 0px 30px 30px 0px;
+    z-index: 100;
+    transition: width 300ms;
+}
+
+.sidebar:hover {
+    width: 230px;
+    z-index: 200;
+}
+
+.sidebar-head {
+    height: 250px;
+    padding: 4rem 0rem 1rem 0rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.sidebar-menu {
+    margin-top: 1rem;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.sidebar-menu a {
+    padding-left: 1rem;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.sidebar-menu a.active {
+    background: #E9E3D7;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #000000;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.sidebar-logout {
+    height: 250px;
+    padding: 7rem 0rem 1rem 0rem;
+    text-align: center;
+}
+
+.sidebar-logout li a {
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+}
+
+.sidebar-logout a span:first-child {
+    font-size: 1rem;
+}
+
+.main-content {
+    transition: margin-left 300ms;
+    margin-left: 230px;
+}
+
+.main-content header {
+    background: #E9E3D7;
+    padding: 1rem;
+    position: absolute;
+    left: 230px;
+    top: 0;
+    z-index: 100;
+    transition: left 300ms;
+    box-shadow: 0 4px 2px -2px rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 230px);
+}
+
+.main-content h4 label span {
+    padding-right: 1rem;
+}
+
+.main-content .client-w span {
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+#nav-toggle:checked+.sidebar {
+    width: 70px;
+}
+
+#nav-toggle:checked+.sidebar li {
+    padding-left: 0.5rem;
+}
+
+#nav-toggle:checked+.sidebar .sidebar-head img,
+#nav-toggle:checked+.sidebar .sidebar-head span,
+#nav-toggle:checked+.sidebar li a span:last-child {
+    display: none;
+}
+
+#nav-toggle:checked~.main-content {
+    margin-left: 70px;
+}
+
+#nav-toggle:checked~.main-content header {
+    width: calc(100% - 70px);
+    left: 70px;
+}
+
+main {
+    margin-top: 30px;
+    padding: 2rem 1.5rem;
+    background: #E9E3D7;
+    min-height: cal(100vh - 90px);
+}
+
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        width: 70px;
+    }
+    .sidebar li {
+        padding-left: 0.5rem;
+    }
+    .sidebar .sidebar-head img,
+    .sidebar .sidebar-head span,
+    .sidebar li a span:last-child {
+        display: none;
+    }
+    .main-content {
+        margin-left: 70px;
+    }
+    .main-content header {
+        width: calc(100% - 70px);
+        left: 70px;
+    }
+    /* footer{
+width: calc(100% - 70px);
+left: 70px;
+} */
+    .sidebar:hover {
+        width: 230px;
+        z-index: 200;
+    }
+    .sidebar:hover li {
+        padding-left: 0.5rem;
+    }
+    .sidebar:hover .sidebar-head img,
+    .sidebar:hover .sidebar-head span,
+    .sidebar:hover li a span:last-child {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sidebar {
+        left: -100% !important;
+    }
+    .main-content header h4 {
+        display: flex;
+        align-items: center;
+    }
+    .main-content header h4 label {
+        display: inline-block;
+        background: var(--main-color);
+        padding-right: 0rem;
+        margin-right: 1rem;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+    .main-content header h4 label span {
+        text-align: center;
+        padding-right: 0rem;
+    }
+    .main-content {
+        width: 100%;
+        margin-left: 0rem;
+    }
+    header {
+        width: 100% !important;
+        left: 0 !important;
+    }
+    #nav-toggle:checked+.sidebar {
+        left: 0 !important;
+        z-index: 100;
+        width: 230px;
+    }
+    #nav-toggle:checked+.sidebar li {
+        padding-left: 0.5rem;
+    }
+    #nav-toggle:checked+.sidebar .sidebar-head img,
+    #nav-toggle:checked+.sidebar .sidebar-head span {
+        display: none;
+    }
+    #nav-toggle:checked+.sidebar li a span:last-child {
+        display: inline;
+    }
+    #nav-toggle:checked~.main-content {
+        margin-left: 0rem !important;
+    }
+    footer {
+        width: 100%;
+    }
+    #noti {
+        width: auto;
+        justify-content: center;
+    }
+}
+
+footer {
+    /* position: fixed; */
+    background: #E9E3D7;
+    bottom: 0;
+    width: 100%;
+    text-align: end;
+    font-size: 12px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 0rem;
+}
+
+.card-single {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+}
+
+.card-single div:last-child span {
+    font-size: 3rem;
+    color: #33caa4;
+}
+
+.card-single div:first-child {
+    color: var(--text-grey);
+}
+
+.card-single h5 {
+    color: gray;
+}
+
+.noBorder {
+    border: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-single div:last-child span {
+        font-size: 2.4rem;
+        color: #33caa4;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .cards {
+        grid-template-columns: 100%;
+    }
+    .card-single div:last-child span {
+        font-size: 2.6rem;
+        color: #33caa4;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card-single div:last-child span {
+        font-size: 2.8rem;
+        color: #33caa4;
+    }
+}

@@ -1,0 +1,44 @@
+รายการที่ต้องเอาเข้า Database
+	// PERSONAL DETAIL {}
+1.) Position | ตำแหน่งงาน
+2.) Data_Name_First | ชื่ออังกฤษ (ชื่อจริง)
+3.) Data_Name_Last | ชื่ออังกฤษ (นามสกุล)
+4.) Data_Name_First_Thai | ชื่อไทย (ชื่อจริง)
+5.) Data_Name_Last_Last | ชื่อไทย (นามสกุล)
+6.) Data_Gender | เพศ
+
+    	// QULIFICATION SUMMARY {}
+7.) Data_Specialized_Background
+8.) Data_Project_Record
+9.) Data_Extra_Experiences
+10) Data_Soft_Skill
+
+	// Technical Expertise {}
+11.) Data_Operating_System
+12.) Data_Programing_Language
+13.) Data_Database
+14.) Data_ToolsIDE
+15.) Data_Database_Features
+16.) Data_Database_Tools
+17.) Data_Application_Servers
+18.) Data_Networks
+19.) Data_Securities
+20.) Data_Java_Technologies
+21.) Data_Java_Script_Technologies
+22.) Data_Version_Control_System
+23.) Data_Report
+24.) Data_Design_tools
+25.) Data_Others
+26.) Data_Methodologies
+27.) Data_DevOps_Technologies
+28.) Data_Cloud_technologies
+29.) Data_Tech_Stack
+
+ 	// PROFESSIONAL EXPERIENCES
+30.) Data_Company_Work_Experincecs
+
+	// EDUCATION
+31.) Data_Education
+
+	// CERTIFICATION
+32.) Data_Certification

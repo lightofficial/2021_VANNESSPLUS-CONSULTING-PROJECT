@@ -1,0 +1,847 @@
+
+
+body {
+    overflow-x: hidden;
+}
+
+table::-webkit-scrollbar {
+    width: 14.6px;
+    height: 16px;
+}
+
+table::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 12px;
+    background-color: #909090;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+table::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+table::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+table::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+
+    background-color: #cccccc;
+}
+
+body::-webkit-scrollbar {
+    width: 15.6px;
+    height: 18px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 12px;
+    background-color: #909090;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+body::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+
+    background-color: #cccccc;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 15.6px;
+    height: 18px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 12px;
+    background-color: #909090;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.modal-body::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.modal-body::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+
+    background-color: #cccccc;
+}
+
+
+.table-wrapper {
+    background: #fff;
+    padding: 20px 25px;
+    margin: 30px 0;
+    border-radius: 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
+}
+
+#header {
+
+    background-color: #16a085;
+    color: #fff;
+    text-align: center;
+}
+
+.table-title {
+    padding-bottom: 15px;
+    /* background: linear-gradient(40deg, #5D80A8, #E9E3D7) !important; */
+    background: #5757d1;
+    color: black;
+    padding: 16px 30px;
+    margin: -20px -25px 10px;
+    border-radius: 1px 1px 0 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
+}
+
+.table-title h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+}
+
+.table-title .btn-group {
+    float: right;
+}
+
+.table-title .btn {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    border: none;
+    min-width: 50px;
+    border-radius: 1px;
+    border: none;
+    outline: none !important;
+    margin-left: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
+}
+
+.table-title .btn i {
+    float: left;
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+.table-title .btn span {
+    float: left;
+    margin-top: 2px;
+}
+
+table.table tr th,
+table.table tr td {
+    border-color: #e9e9e9;
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+table.table tr th:first-child {
+    width: auto;
+}
+
+table.table tr th:last-child {
+    width: auto;
+}
+
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+table.table td:last-child i {
+    opacity: 0.9;
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+table.table td a {
+    font-weight: bold;
+    color: #566787;
+    display: inline-block;
+    text-decoration: none;
+    outline: none !important;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+table.table td a:hover {
+    color: #2196F3;
+}
+
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+table.table td a.edit {
+    color: #FFC107;
+}
+
+table.table td a.delete {
+    color: #F44336;
+}
+
+table.table td i {
+    font-size: 19px;
+}
+
+table.table .avatar {
+    border-radius: 1px;
+    vertical-align: middle;
+}
+
+.pagination {
+    float: right;
+    margin: 0 0 5px;
+}
+
+.pagination li a {
+    border: none;
+    font-size: 13px;
+    min-width: 30px;
+    min-height: 30px;
+    color: #999;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 1px !important;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.pagination li a:hover {
+    color: #666;
+}
+
+.pagination li.active a,
+.pagination li.active a.page-link {
+    background: #03A9F4;
+}
+
+.pagination li.active a:hover {
+    background: #0397d6;
+}
+
+.pagination li.disabled i {
+    color: #ccc;
+}
+
+.pagination li i {
+    font-size: 16px;
+    padding-top: 6px
+}
+
+.hint-text {
+    float: left;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Custom checkbox */
+
+
+/* Modal styles */
+.modal .modal-dialog {
+    max-width: 400px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+    padding: 20px 30px;
+}
+
+.modal .modal-content {
+    border-radius: 1px;
+}
+
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 1px 1px;
+}
+
+.modal .modal-title {
+    display: inline-block;
+}
+
+.modal .form-control {
+    text-align: left;
+    border-radius: 1px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+
+.modal textarea.form-control {
+    text-align: left;
+    resize: vertical;
+}
+
+.modal .btn {
+    border-radius: 1px;
+    min-width: 100px;
+}
+
+.modal form label {
+    font-weight: normal;
+}
+
+#job:hover,
+#status:hover {
+    color: #C80000;
+}
+
+#gg {
+    color: #909090;
+    font-size: 16px;
+}
+
+#gg:hover {
+    color: #C80000;
+}
+
+.modal-body {
+    max-height: 568px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.overlay::-webkit-scrollbar {
+    width: 14.6px;
+    height: 16px;
+}
+
+.overlay::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 12px;
+    background-color: #909090;
+    box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.overlay::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.overlay::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.overlay::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+
+    background-color: #cccccc;
+}
+.overlay {
+    height: 90%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 70;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px 0px 0px 30px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+
+}
+
+.overlay-content {
+    
+    margin-top: 30px;
+   
+}
+
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+    color: #000;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#ji {
+    color: gray;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.alert {
+    background: #fff;
+    padding: 20px 35px;
+    min-width: 420px;
+    position: absolute;
+    right: 30;
+    top: 85px;
+    border-radius: 4px;
+    z-index: 1500;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alert.showAlert {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alert.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    40% {
+        transform: translateX(-10%);
+    }
+
+    80% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.alert.hide {
+    animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    40% {
+        transform: translateX(0%);
+    }
+
+    80% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(110%);
+    }
+}
+
+.alert .fa-check-circle {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5cb85c;
+    font-size: 25px;
+}
+
+.alert .fa-times-circle {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d9534f;
+    font-size: 25px;
+}
+
+.alert .msg {
+    padding: 0 20px;
+    font-size: 16px;
+    color: #6E6E6E;
+}
+
+.alert .close-btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.alert .close-btn:hover {
+    background: #fff;
+}
+
+.alert .close-btn .fas {
+
+    color: #6E6E6E;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 560px) {
+    .alert {
+
+        padding: 20px 35px;
+        min-width: 70px;
+        top: 70px;
+
+    }
+
+    .alert .fa-check-circle {
+
+        font-size: 22px;
+    }
+
+    .alert .fa-times-circle {
+
+        font-size: 22px;
+    }
+
+    .alert .msg {
+
+        font-size: 15px;
+
+    }
+
+    .alert .close-btn .fas {
+
+
+        font-size: 16px;
+
+    }
+
+    #kako {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .alert {
+
+        padding: 20px 35px;
+        min-width: 70px;
+        top: 70px;
+
+    }
+
+    .alert .fa-check-circle {
+
+        font-size: 22px;
+    }
+
+    .alert .fa-times-circle {
+
+        font-size: 22px;
+    }
+
+    .alert .msg {
+
+        font-size: 15px;
+
+    }
+
+    .alert .close-btn .fas {
+
+
+        font-size: 16px;
+
+    }
+
+    #kako .btn-content {
+        font-size: 10px;
+    }
+}
+
+#kako {
+    /* Clean style */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--button-text-color);
+    cursor: pointer;
+    height: 200px;
+
+    --button-text-color: var(--background-color);
+    --button-text-color-hover: var(--button-background-color);
+    --border-color: #7d8082;
+    --button-background-color: #ece8e1;
+    --highlight-color: #ff4655;
+    --button-inner-border-color: transparent;
+    --button-bits-color: var(--background-color);
+    --button-bits-color-hover: var(--button-background-color);
+
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.15s ease;
+}
+
+#kako::before,
+#kako::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all 0.15s ease;
+}
+
+#kako::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+#kako::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+#kako:active,
+#kako:focus {
+    outline: none;
+}
+
+#kako:active::before,
+#kako:active::after {
+    right: 3px;
+    left: 3px;
+}
+
+#kako:active::before {
+    top: 3px;
+}
+
+.btn:active::after {
+    bottom: 3px;
+}
+
+.btn__inner {
+    position: relative;
+    display: block;
+    padding: 80px 40px;
+    background-color: #ece8e1;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+}
+
+.btn__inner::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: var(--button-bits-color);
+}
+
+.btn__inner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--button-bits-color);
+    transition: all 0.5s ease;
+}
+
+.btn__slide {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -10px;
+    left: -25px;
+    width: 0;
+    background-color: var(--highlight-color);
+    transform: skew(-15deg);
+    transition: all 0.5s ease;
+}
+
+.btn__content {
+    position: relative;
+}
+
+#kako:hover {
+    color: var(--button-text-color-hover);
+}
+
+#kako:hover .btn__slide {
+    width: calc(100% + 45px);
+}
+
+#kako:hover .btn__inner::after {
+    background-color: var(--button-bits-color-hover);
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+
+.tab {
+    display: none;
+}
+
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 85%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    right: 0;
+    top: 70;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Black fallback color */
+    border-radius: 30px 0px 0px 30px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    /* position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center; */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+} */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+    color: #000;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        top: 15px;
+        right: 35px;
+    }
+}

@@ -1,0 +1,70 @@
+[mail function]
+
+SMTP=smtp.gmail.com
+
+smtp_port=587
+sendmail_from = superrecruit123@gmail.com
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+; For Win32 only.
+; http://php.net/sendmail-from
+; sendmail_from = me@example.com
+
+; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
+; http://php.net/sendmail-path
+;sendmail_path =
+
+; Force the addition of the specified parameters to be passed as extra parameters
+; to the sendmail binary. These parameters will always replace the value of
+; the 5th parameter to mail().
+;mail.force_extra_parameters =
+
+; Add X-PHP-Originating-Script: that will include uid of the script followed by the filename
+;mail.add_x_header=Off
+
+; The path to a log file that will log all mail() calls. Log entries include
+; the full path of the script, line number, To address and headers.
+;mail.log =
+; Log mail to syslog (Event Log on Windows).
+;mail.log = syslog
+
+[ODBC]
+; http://php.net/odbc.default-db
+;odbc.default_db    =  Not yet implemented
+
+; http://php.net/odbc.default-user
+;odbc.default_user  =  Not yet implemented
+
+; http://php.net/odbc.default-pw
+;odbc.default_pw    =  Not yet implemented
+
+; Controls the ODBC cursor model.
+; Default: SQL_CURSOR_STATIC (default).
+;odbc.default_cursortype
+
+; Allow or prevent persistent links.
+; http://php.net/odbc.allow-persistent
+odbc.allow_persistent=On
+
+; Check that a connection is still valid before reuse.
+; http://php.net/odbc.check-persistent
+odbc.check_persistent=On
+
+; Maximum number of persistent links.  -1 means no limit.
+; http://php.net/odbc.max-persistent
+odbc.max_persistent=-1
+
+; Maximum number of links (persistent + non-persistent).  -1 means no limit.
+; http://php.net/odbc.max-links
+odbc.max_links=-1
+
+; Handling of LONG fields.  Returns number of bytes to variables.  0 means
+; passthru.
+; http://php.net/odbc.defaultlrl
+odbc.defaultlrl=4096
+
+; Handling of binary data.  0 means passthru, 1 return as is, 2 convert to char.
+; See the documentation on odbc_binmode and odbc_longreadlen for an explanation
+; of odbc.defaultlrl and odbc.defaultbinmode
+; http://php.net/odbc.defaultbinmode
+odbc.defaultbinmode=1

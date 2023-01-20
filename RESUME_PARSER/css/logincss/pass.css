@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    width: 100%;
+    height: auto;
+    place-items: center;
+    background: #e9e3d7;
+}
+
+::selection {
+    color: #fff;
+    background: #e0a166;
+}
+
+.container-fluid {
+    justify-content: center;
+    width: auto;
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 2%;
+}
+
+.blue-text {
+    font-weight: bold;
+    color: 5757d1;
+}
+
+.red-text {
+    font-weight: bold;
+    color: #C80000;
+}
+
+.logo {
+    width: 210px;
+    height: 190px;
+}
+
+footer {
+    text-align: center;
+    background-color: #e9e3d7;
+    color: #777777;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* position: fixed;
+    z-index: 1; */
+}
+
+.container-fluid .form form .form-control {
+    height: 40px;
+    font-size: 15px;
+}
+
+.container-fluid .form form .forget-pass {
+    margin: -15px 0 15px 0;
+}
+
+.container-fluid .form form .forget-pass a {
+    font-size: 15px;
+}
+
+.container-fluid form .button {
+    background: #6665ee;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.container-fluid form .button:hover {
+    background: #5757d1;
+}
+
+.container-fluid form .link {
+    padding: 5px 0;
+}
+
+.container-fluid form .link a {
+    color: #2f9b95;
+}
+
+.container-fluid .login-form form p {
+    font-size: 14px;
+}
+
+.container-fluid .row .alert {
+    font-size: 15px;
+}
